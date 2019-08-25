@@ -20,6 +20,9 @@
     &:hover {
       color: $gray-300;
     }
+    img{
+      max-height: 2.75rem;
+    }
   }
   .navbar-nav {
     .nav-item {

@@ -20,6 +20,32 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  // Subscribe Form Submission
+  $('#postToGoogle').click(function() {
+    var subName = $("#subName").val();
+    var subEmail = $("#subEmail").val();
+    $.ajax({
+      url:
+        "https://docs.google.com/forms/d/e/1FAIpQLSd3tPmMyhPmlEbzpAewoKgwNhJt8UlmHs37XRYtRbnbMMzNcw/formResponse",
+      data: {
+        emailAddress: subEmail,
+        "entry.984160747": subName
+      },
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+        0: function() {
+          $("#form").hide();
+          $("#successMessage").show();
+        },
+        200: function() {
+          $("#form").hide();
+          $("#successMessage").show();
+        }
+      }
+    });
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
