@@ -1,0 +1,49 @@
+// Styling for the masthead
+.masthead {
+  text-align: center;
+  color: black;
+  canvas{
+    display: block;
+    vertical-align: bottom;
+  }  
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: $primary;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    .intro-text {
+      position: absolute;
+      top:40%;
+      width: 100%;
+      .intro-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 25px;
+        @include heading-font;
+      }
+    }
+  }
+}
+@media(min-width:768px) {
+  .masthead {
+    .container-fluid {
+      height: 100vh;
+    }
+    #particles-js{
+    .intro-text {
+      .intro-heading {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
+}
