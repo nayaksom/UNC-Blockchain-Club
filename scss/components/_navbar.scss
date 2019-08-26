@@ -3,9 +3,9 @@
   background-color: $primary;
   @include heading-font;
   .navbar-toggler {
-    font-size: 0.75rem;
+    font-size: 2rem;
     right: 0;
-    padding: 0.75rem;
+    padding: 0.5rem;
     text-transform: uppercase;
     color: $white;
     border: 0;
