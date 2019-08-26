@@ -1,5 +1,6 @@
 // Styling for the footer
 .footer {
+  background-color: $primary;
   @include heading-font;
   padding: 25px 0;
   text-align: center;

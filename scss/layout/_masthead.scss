@@ -1,5 +1,6 @@
 // Styling for the masthead
 .masthead {
+  margin-top: 3.75rem;
   text-align: center;
   color: black;
   canvas{
@@ -31,6 +32,7 @@
 }
 @media(min-width:768px) {
   .masthead {
+    margin-top: 0;
     .container-fluid {
       height: 100vh;
     }

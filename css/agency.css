@@ -169,6 +169,7 @@ img::-moz-selection {
 }
 
 .masthead {
+  margin-top: 3.75rem;
   text-align: center;
   color: black;
 }
@@ -204,6 +205,9 @@ img::-moz-selection {
 }
 
 @media (min-width: 768px) {
+  .masthead {
+    margin-top: 0;
+  }
   .masthead .container-fluid {
     height: 100vh;
   }
@@ -573,6 +577,7 @@ img::-moz-selection {
 }
 
 .footer {
+  background-color: #4B9CD3;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding: 25px 0;
   text-align: center;
