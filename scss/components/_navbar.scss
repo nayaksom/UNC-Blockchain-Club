@@ -1,6 +1,7 @@
 // Styling for the navbar
 #mainNav {
   background-color: $primary;
+  padding: 0.5rem;
   @include heading-font;
   .navbar-toggler {
     font-size: 2rem;
@@ -37,6 +38,15 @@
         &:hover {
           color: $black;
         }
+      }
+    }
+  }
+}
+@media(max-width:360px) {
+  #mainNav {
+    .navbar-brand {
+      img{
+        max-height: 2rem;
       }
     }
   }
